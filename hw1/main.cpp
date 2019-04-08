@@ -269,10 +269,10 @@ int main(int argc, char** argv) {
                 img.at<cv::Vec3b>(x, y)[o] = max(imgRG.at<cv::Vec3b>(x, y)[o], imgB.at<cv::Vec3b>(x, y)[o]);
 
     // Save the image.
-    cv::imwrite("pic2.png", img);
+    cv::imwrite("output.png", img);
 
     // Show the image, wait for user keystroke and quit.
-    cv::imshow("pic2", img);
+    cv::imshow("output", img);
     cv::waitKey(0);
     cv::destroyAllWindows();
     system("pause");
